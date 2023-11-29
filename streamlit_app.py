@@ -20,11 +20,11 @@ def main():
 
     with col1:
         # Get demands from the user
-        demands = st.text_area("Enter yesterday's passenger demand for each station on Line 10 (comma-separated values), or \"n/a\" if this is the first day : \
+        demands = st.text_area("Enter yesterday's passenger demand for each station on Line 10 (comma-separated values), or \"0\" if this is the first day : \
                                Please include 16 demand figures--one for each station on line 10.", "22671, 11854, 4051, 4524, 12508, 4080, 12424, 2792, 9241, 4121, 17618, 3877, 10126, 6267, 430, 5670")
 
         # Convert demands to a list of integers
-        if demands == "n/a":
+        if demands == [0]:
             demands_list = []
         else:
             demands_list = [int(x.strip()) for x in demands.split(',')]
