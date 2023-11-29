@@ -98,6 +98,14 @@ def main():
         st.write(f"Number of Trains Needed: {trains_needed}")
         st.write(f"Fill Rate: {fill_rate:.2%}")
         st.write(f"Average Station Time: {station_time_value:.2f} seconds")
+    
+    hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
         
 
 if __name__ == "__main__":
