@@ -14,7 +14,7 @@ ALIGHT_RATE = 0.65 * 1.65 * 9
 DEPART_RATE = 0.2
 
 def main():
-    st.title("Paris Metro Line 10 Olympics Queuing Model")
+    st.title("Paris Metro Line 10 Olympics Forecasting Model")
 
     col1, col2 = st.columns([4,3], gap="large")
 
